@@ -1,22 +1,23 @@
-package bot
+package commands
 
 import (
-	"github.com/bwmarrin/discordgo"
-	"github.com/zVasO/StalkerCypher/config"
+	"StalkerCypher/config"
 	"log"
+
+	"github.com/bwmarrin/discordgo"
 )
 
 func getCommands() []*discordgo.ApplicationCommand {
 	commands := []*discordgo.ApplicationCommand{
 		{
-			Name:        "play",
-			Description: "Play music",
+			Name:        "rank",
+			Description: "Give the rank",
 			Options: []*discordgo.ApplicationCommandOption{
 
 				{
 					Type:        discordgo.ApplicationCommandOptionString,
 					Name:        "query",
-					Description: "the youtube url",
+					Description: "Username #TAG",
 					Required:    true,
 				},
 			},
@@ -25,7 +26,7 @@ func getCommands() []*discordgo.ApplicationCommand {
 	return commands
 }
 
-func registerCommands(goBot *discordgo.Session) {
+func RegisterCommands(goBot *discordgo.Session) {
 	commands := getCommands()
 
 	registeredCommands := make([]*discordgo.ApplicationCommand, len(commands))

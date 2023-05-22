@@ -1,9 +1,9 @@
 package main
 
 import (
+	"StalkerCypher/bot"
+	"StalkerCypher/config"
 	"fmt"
-	"github.com/zVasO/StalkerCypher/bot"
-	"github.com/zVasO/StalkerCypher/config"
 )
 
 func main() {

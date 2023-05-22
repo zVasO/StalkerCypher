@@ -10,6 +10,7 @@ var (
 	Token     string
 	BotPrefix string
 	AppID     string
+	RiotToken string
 
 	config *configStruct
 )
@@ -18,6 +19,7 @@ type configStruct struct {
 	Token     string `json:"Token"`
 	BotPrefix string `json:"BotPrefix"`
 	AppID     string `json:"AppID"`
+	RiotToken string `json:"RiotToken"`
 }
 
 func ReadConfig() error {
@@ -42,6 +44,7 @@ func ReadConfig() error {
 	Token = config.Token
 	BotPrefix = config.BotPrefix
 	AppID = config.AppID
+	RiotToken = config.RiotToken
 
 	return nil
 }
