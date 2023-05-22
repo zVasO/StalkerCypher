@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/DylanGermann/DjNoopy/bot"
-	"github.com/DylanGermann/DjNoopy/config"
+	"github.com/zVasO/StalkerCypher/bot"
+	"github.com/zVasO/StalkerCypher/config"
 )
 
 func main() {

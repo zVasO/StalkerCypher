@@ -2,8 +2,8 @@ package bot
 
 import (
 	"fmt"
-	"github.com/DylanGermann/DjNoopy/config"
 	"github.com/bwmarrin/discordgo"
+	"github.com/zVasO/StalkerCypher/config"
 )
 
 var (

@@ -1,8 +1,8 @@
 package bot
 
 import (
-	"github.com/DylanGermann/DjNoopy/config"
 	"github.com/bwmarrin/discordgo"
+	"github.com/zVasO/StalkerCypher/config"
 	"log"
 )
 
